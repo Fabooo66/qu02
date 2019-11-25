@@ -11,9 +11,6 @@
 
   <body>
     <header class="row">
-      <div class="col-3"
-        LOGO
-      </div>
       <div class="float-left">
         The Big Picture
       </div>
@@ -23,6 +20,31 @@
     </header>
 
     <hr />
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Comment here!</h4>
+          </div>
+          <%= simple_form_for Comment.new do |f| %>
+            <div class="modal-body">
+              <%= f.input :saying %>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <%= f.submit 'Enter', class: 'btn btn-danger' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>   
 
     <br class="clear" />
 
@@ -37,11 +59,18 @@
       <%= yield %>
     </div>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6">
-            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+            <%= link_to "Home", root_path, class: 'next-quote' %>
           </div>
         </div>
       </div>

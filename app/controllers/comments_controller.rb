@@ -4,9 +4,7 @@ class CommentsController < ApplicationController
   end
 
 
-  def new
-    @comment = Comment.new
-  end
+
 
   def create
     @comment = Comment.create(comment_params)
@@ -14,6 +12,9 @@ class CommentsController < ApplicationController
       flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
     end
     redirect_to_root_path
+  end
+
+  def about
   end
 
   private

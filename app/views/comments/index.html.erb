@@ -1,1 +1,9 @@
 <h1>your comments here</h1>
+
+<% @comment.comments.each.do |comment| %>
+  <div>
+    <blockquote>
+      <% comment.comment %>
+    </blockquote>
+  </div>
+<% end %>
