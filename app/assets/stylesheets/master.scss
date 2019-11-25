@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
 @import "bootstrap";
 
+body {
+  background: image_url('bg.png');
+}
+
 .clear {
   clear: both;
 }
@@ -34,11 +38,7 @@ h2 {
   font-family: 'EB Garamond', serif;
 
 }
-.next-quote {
-  color:#f84342;
-  font-family: 'EB Garamond', serif;
-  font-size:20px;
-}
+
 .footer-blurb {
   font-family:'EB Garamond', serif;
   font-style: italic;
@@ -68,12 +68,13 @@ h2 span {
 }
 
 .hero {
-  background: image_url('mountain.jpg') no-repeat center center fixed;
+  background: image_url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 770px;
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -107,4 +108,16 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+}
+
+.navbar {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: white;
 }
