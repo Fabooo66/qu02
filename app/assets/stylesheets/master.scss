@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import "bootstrap";
+
+.clear {
+  clear: both;
+}
+
+.slogan {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  padding-top: 26px;
+}
+.links {
+  padding-top: 26px;
+}
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+}
+header {
+  border-top: 9px solid #222222;
+}
+hr {
+  clear:both;
+}
+h1 {
+  font-family: 'EB Garamond', serif;
+
+}
+h2 {
+  font-family: 'EB Garamond', serif;
+
+}
+.next-quote {
+  color:#f84342;
+  font-family: 'EB Garamond', serif;
+  font-size:20px;
+}
+.footer-blurb {
+  font-family:'EB Garamond', serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.about {
+  font-family:'EB Garamond', serif; 
+}
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+.modal {
+  font-family: 'EB Garamond', serif;
+}
+h2 span {
+  color: #dddddd;
+  font-family: 'EB Garamond', serif;
+}
+::selection {
+  background-color: #f84343;
+}
+
+.hero {
+  background: image_url('mountain.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 770px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+  color:#173DC2;
+}
+
+.frosty h1 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}

@@ -10,6 +10,42 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="row">
+      <div class="col-3"
+        LOGO
+      </div>
+      <div class="col-4">
+        words words words words
+      </div>
+      <div class='col-5'>
+        <%= link_to 'See Quotes Here', new_comment_path %>
+      </div>
+    </header>
+
+    <hr />
+
+    <br class="clear" />
+
+
+    <div class="container">
+      <% if flash[:error].present? %>
+        <div class="col-10 offset-1 alert alert-danger">
+          <%= flash[error].html_safe %>
+        </div>
+      <% end %>
+
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
