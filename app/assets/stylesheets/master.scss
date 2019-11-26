@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
 @import 'bootstrap';
 
-body, html {
+/*body, html {
   height: 100%;
-}
+}*/
 
-.clear {
+/*.clear {
   clear: both;
-}
+}*/
 
-.container {
+/*.container {
   width: 350px;
   margin: 200px;
   padding: 20px;
@@ -18,8 +18,8 @@ body, html {
   background-color: rgba(0,0,0,0.6)
   text-align: center;
   border-radius: 40px;
-}
-
+}*/
+/*
 h1 {
   font-family: 'Helvetice Neue', Helvetica;
   font-weight: 100;
@@ -30,14 +30,20 @@ p {
   font-family: 'Helvetice Neue', Helvetica;
   font-weight: 100;
   font-size: 40px; 
-}
+}*/
 
 header {
   border-top: 9px solid #222222;
 }
 
 hr {
-  clear:both;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
 
 @media (max-width: 750px) {
@@ -50,7 +56,12 @@ hr {
   font-family: 'EB Garamond', serif;
 }
 
-.hero-image {
+h1 {
+  color: blue;
+  font-weight: 99%;
+}
+
+/*.hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
   height: 50%;
   background-position: center;
@@ -66,7 +77,7 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
+}*/
 /*.hero_background,
 .hero_content {
   position: absolute;
@@ -130,3 +141,59 @@ hr {
   font-weight: 100;
   color: white;
 }*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    background-image: image-url('mountain.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;

@@ -7,18 +7,32 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="master.scss">
   </head>
 
   <body>
     <header class="row">
-
-      <div class="float-right">
-        <%= link_to 'See Quotes Here', new_comment_path %>
+      <div class="col-3">
+        <div class="float-right">
+          <%= link_to 'See Quotes Here', new_comment_path %>
+        </div>
       </div>
     </header>
 
     <hr />
 
+<!--     <section class="hero">
+      <div class="hero-inner">
+        <h1>Look At This!</h1>
+        <br />
+        <h2>This is amazing!</h2>
+        <br />
+        <br />
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Enter comment
+        </button>
+      </div>
+    </section> -->
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
