@@ -1,48 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
-@import "bootstrap";
+@import 'bootstrap';
 
-/*body {
-  background: image_url('bg.png');
-}*/
+body, html {
+  height: 100%;
+}
 
 .clear {
   clear: both;
 }
 
+.container {
+  width: 350px;
+  margin: 200px;
+  padding: 20px;
+  background: black;
+  color: blue;
+  background-color: rgba(0,0,0,0.6)
+  text-align: center;
+  border-radius: 40px;
+}
 
+h1 {
+  font-family: 'Helvetice Neue', Helvetica;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+p {
+  font-family: 'Helvetice Neue', Helvetica;
+  font-weight: 100;
+  font-size: 40px; 
+}
 
 header {
   border-top: 9px solid #222222;
 }
+
 hr {
   clear:both;
 }
-
-.title {
-  color: blue;
-}
-
 
 @media (max-width: 750px) {
   .footer-blurb {
     text-align: left;
   }
 }
+
 .modal {
   font-family: 'EB Garamond', serif;
-
-
-.hero {
-  background: image_url('hero.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 770px;
-  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar {
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/*.hero_background,
+.hero_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero_backgroud {
+  z-index: -1;
+}
+
+.hero-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+/*h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
   color:#173DC2;
 }
@@ -85,4 +129,4 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   color: white;
-}
+}*/
